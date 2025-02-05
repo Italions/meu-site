@@ -9,7 +9,7 @@ let list = container.querySelector('.list')
 
 
 let active = 0
-let firsPosition = 0
+let firstPosition = 0
 let lastPosition = items.length - 1
 
 
@@ -42,7 +42,7 @@ prevButton.onclick = () => { // botão que é usado para clicar e ir para trás
 
     list.style.setProperty('--calculation', -1)
 
-    active = active - 1 < firsPosition ? lastPosition : active - 1 // isso aqui é um if else 
+    active = active - 1 < firstPosition ? lastPosition : active - 1 // isso aqui é um if else 
     setSlider()
     items[active].classList.add('active')
 
